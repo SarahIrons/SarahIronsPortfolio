@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sarahironsportfolio/static/css/main.f855e6bc.css",
-    "main.js": "/sarahironsportfolio/static/js/main.5a2e6b55.js",
-    "static/js/787.f91f1cc7.chunk.js": "/sarahironsportfolio/static/js/787.f91f1cc7.chunk.js",
-    "static/media/logo.svg": "/sarahironsportfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/sarahironsportfolio/index.html",
-    "main.f855e6bc.css.map": "/sarahironsportfolio/static/css/main.f855e6bc.css.map",
-    "main.5a2e6b55.js.map": "/sarahironsportfolio/static/js/main.5a2e6b55.js.map",
-    "787.f91f1cc7.chunk.js.map": "/sarahironsportfolio/static/js/787.f91f1cc7.chunk.js.map"
+    "main.css": "/SarahIronsPortfolio/static/css/main.f855e6bc.css",
+    "main.js": "/SarahIronsPortfolio/static/js/main.f0ee0ec5.js",
+    "static/js/787.f91f1cc7.chunk.js": "/SarahIronsPortfolio/static/js/787.f91f1cc7.chunk.js",
+    "static/media/logo.svg": "/SarahIronsPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/SarahIronsPortfolio/index.html",
+    "main.f855e6bc.css.map": "/SarahIronsPortfolio/static/css/main.f855e6bc.css.map",
+    "main.f0ee0ec5.js.map": "/SarahIronsPortfolio/static/js/main.f0ee0ec5.js.map",
+    "787.f91f1cc7.chunk.js.map": "/SarahIronsPortfolio/static/js/787.f91f1cc7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.5a2e6b55.js"
+    "static/js/main.f0ee0ec5.js"
   ]
 }
