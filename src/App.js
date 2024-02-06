@@ -1,36 +1,31 @@
 import './App.scss';
+import ContentSection from './components/ContentSection';
 
 function App() {
   return (
   <>
-    <div class="navbar--container sticky">
-      <div class="navbar--title"><h4>navigation</h4></div>
-      <div class="navbar--icon"><i class="fas fa-bars"></i></div>
+    
+    <div className="navbar--container sticky">
+      <div className="navbar--title"><h4>navigation</h4></div>
+      <div className="navbar--icon"><i className="fas fa-bars"></i></div>
     </div>
-    <div class="nav--open close sticky">
-      <div class="nav--open-icon"><i class="fas fa-times"></i></div>
-      <div class="nav--open-title">explore</div>
-      <div class="nav--open-menu">
-        <a href="">about</a>
-        <a href="">work</a>
-        <a href="">services</a>
-        <a href="">blog</a>
-        <a href="">contact</a>
+    <div className="nav--open close sticky">
+      <div className="nav--open-icon"><i className="fas fa-times"></i></div>
+      <div className="nav--open-title">explore</div>
+      <div className="nav--open-menu">
+        <a href="#about">about</a>
+        <a href="#work">work</a>
+        <a href="#skills">skills</a>
+        <a href="#contact">contact</a>
       </div>
     </div>
   
-    <section>
-      <h1>Hi, my name is <span>Julie.</span></h1>
-    </section>
-  <section class="two">
-    <h1>I'm a <span>front-end</span>engineer.</h1>
-  </section>
-  <section class="three">
-    <h1>I like to <span class="light">design + code</span> pretty things.</h1>
-  </section>
-  <section class="four">
-      <h1>placeholder text here </h1>
-  </section>
+   <ContentSection id="about"><h1>Hi, I'm Sarah.</h1></ContentSection>
+   <ContentSection id="work" className="two"><h1>Hi, I'm Sarah.</h1></ContentSection>
+   <ContentSection id="skills" className="three"><h1>Hi, I'm Sarah.</h1></ContentSection>
+   <ContentSection id="contact" className="four"><h1>Hi, I'm Sarah.</h1></ContentSection>
+
+
   </>
   );
 }
