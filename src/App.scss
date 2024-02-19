@@ -1,8 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-$bold: 'Oswald', sans-serif;
-$abril: 'Abril Fatface', serif;
-$serif: 'Playfair Display', serif;
+
+.libre-baskerville-regular {
+  font-family: "Kalnia", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Kalnia", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 
 $white: #ffffff;
 $main: #92BFB1;
@@ -26,10 +42,10 @@ a {
 
 
 h1 {
-  font-family: $abril;
+  font-family: Kalnia;
   margin: 0;
   line-height: 1em;
-  font-weight: 100;
+  font-weight: 400;
   color: $white;
   font-size: 3.5em;
   span {
