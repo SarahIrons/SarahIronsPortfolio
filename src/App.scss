@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
+
+$bold: 'Oswald', sans-serif;
+$abril: 'Abril Fatface', serif;
+$serif: 'Playfair Display', serif;
+
+$white: #ffffff;
+$main: #92BFB1;
+$dark: #333333;
+
+$ease-slow: all .4s ease-out;
+
+body {
+  margin: 0;
+  background: lighten($main, 10%);
+}
+
+a {
+  text-decoration: none;
+  color: $main;
+  &:hover {
+    background: $main;
+    color: $dark;
+  }
+}
+
+
+h1 {
+  font-family: $abril;
+  margin: 0;
+  line-height: 1em;
+  font-weight: 100;
+  color: $white;
+  font-size: 3.5em;
+  span {
+    font-style: italic;
+    text-decoration: underline;
+    color: darken($main, 10%);
+  }
+}
+
+.light {
+  color: lighten($main, 10%);
+}
+
+.underline {
+  text-decoration: underline;
+}
