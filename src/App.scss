@@ -1,23 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
-.libre-baskerville-regular {
-  font-family: "Kalnia", serif;
+.zilla-slab-light {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zilla-slab-light-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zilla-slab-regular {
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.libre-baskerville-bold {
-  font-family: "Kalnia", serif;
+.zilla-slab-regular-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.zilla-slab-medium {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.zilla-slab-medium-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.zilla-slab-semibold {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.zilla-slab-semibold-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.zilla-slab-bold {
+  font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
+.zilla-slab-bold-italic {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
   font-style: italic;
 }
+
 
 
 $white: #ffffff;
@@ -42,10 +85,10 @@ a {
 
 
 h1 {
-  font-family: Kalnia;
+  font-family: "Zilla Slab";
   margin: 0;
   line-height: 1em;
-  font-weight: 400;
+  font-weight: 500;
   color: $white;
   font-size: 3.5em;
   span {
