@@ -13,6 +13,14 @@
     &.four{
       background: darken($main,10%);
       h1{color: darken($main,90%);}
+      li{
+        font-size: 40px;
+      }
+      ul{
+          list-style-type: none;
+          padding-left: 0;
+      
+      }
     }
     h1{color: darken($main,90%);}
   }
