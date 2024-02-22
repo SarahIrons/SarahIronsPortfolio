@@ -8,11 +8,12 @@ $ease-slow: all .4s ease-out;
     z-index: 10;
   }
   .navbar--container {
-    top: 15%;
+    top: 5%;
     background: $white;
-    height: 220px;
-    width: 90px;
     box-shadow: 2px 2px 15px rgba($dark, .1);
+    @media only screen and (min-width:600px){
+      top: 15%;
+    }
   }
   .navbar--icon {
     margin-top: 24px;
@@ -24,40 +25,39 @@ $ease-slow: all .4s ease-out;
     }
   }
   .navbar--title {
-    margin-left: 27px;
     margin-top: 35px;
+    display: none;
     h4 {
       writing-mode: vertical-rl;
       font-family: "Zilla Slab";
       letter-spacing: .34em;
       text-transform: uppercase;
       font-size: 0.9em;
+  
     }
+    @media only screen and (min-width:600px){
+      display: block;
+    }
+
   }
   
   //navigation open
   
-  .nav--open {
+  .nav{
     height: 100vh;
     width: 300px;
     background: $white;
     transition: $ease-slow;
     opacity: 1;
     box-shadow: 2px 2px 15px rgba($dark, .1);
-  }
-  
-  .nav--open-icon {
-    text-align: right;
-    padding: 20px;
-    i {
-      font-size: 1.8em;
-      color: $main;
-      &:hover {
-        color: $dark;
-        cursor: pointer;
-      }
+
+    &.nav--close {
+      transform: translateX(-300px);
+      transition: $ease-slow;
+      opacity: 0;
     }
   }
+
   
   .nav--open-title {
     font-family: "Zilla Slab";
@@ -66,6 +66,7 @@ $ease-slow: all .4s ease-out;
     letter-spacing: .2em;
     text-align: center;
     margin-top: 35%;
+    
   }
   
   .nav--open-menu {
@@ -82,8 +83,28 @@ $ease-slow: all .4s ease-out;
     }
   }
   
-  .close {
-    transform: translateX(-300px);
-    transition: $ease-slow;
-    opacity: 0;
+
+
+  .nav__button {
+    background: transparent;
+    border: none;
+    padding:5px;
+    font-size: 25px;
+    &--close {
+      position: absolute;
+      right: 10px;
+    }
+   
+    &--open {
+      text-align: right;
+      padding: 20px;
+      i {
+        font-size: 1.8em;
+        color: $main;
+        &:hover {
+          color: $dark;
+          cursor: pointer;
+        }
+      }
+    }
   }

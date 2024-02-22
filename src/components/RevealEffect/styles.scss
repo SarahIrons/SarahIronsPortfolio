@@ -1,0 +1,87 @@
+.reveal-effect {
+    padding-inline-start: 0px;
+    width: 100%;
+    margin-inline: auto;
+    @media only screen and (min-width:600px){
+        width: 50%;
+    }
+    &__item{
+        width: fit-content;
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 30px ;
+        list-style-type: none;
+        text-transform: uppercase;  
+        position: relative;
+        margin-block: 10px;
+   
+        padding:10px;
+        padding-inline-end: 25%;
+        @media only screen and (min-width:600px){
+           padding-inline-end: 50%;
+          }
+        
+
+        &::after{
+            background-color: rgb(90, 46, 193);
+        }
+       
+        &:nth-of-type(2)::after,
+        &:nth-of-type(2n+3)::after{
+            background-color: rgb(31, 63, 203);
+        }
+   
+        &:nth-of-type(3n+3)::after{
+            background-color: rgb(101, 8, 101);
+        }
+
+        
+        &--been-viewed{
+            &::after{
+                content: "";
+                position:absolute;
+                inset: 0;
+                animation-name:reveal-effect;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in-out;
+                animation-delay: .5s;
+                width: 0;
+            }
+            .reveal-effect__text{
+                animation:reveal-text 2s ease-in-out;
+                opacity: 1;
+                text-align: center;
+            }
+        } 
+    }
+    &__text{
+      opacity: 0;
+    }
+    @keyframes reveal-effect {
+        0%{
+            width: 0;
+            left:0;
+        }
+        44%{
+            width: 100%;
+            left: 0;
+        }
+        54%{
+            width: 100%;
+            left:0;
+        }
+        100%{
+            width: 0;
+            left:100%;
+
+        }    
+    }
+        
+    @keyframes reveal-text {
+        0%{opacity: 0;}
+        44%{opacity: 0;}
+        54%{opacity: 1;}
+    }
+
+    
+}
