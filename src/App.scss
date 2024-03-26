@@ -113,3 +113,16 @@ h1 {
   a{ color:rgb(90, 46, 193);}
 
 }
+#about{
+  .reveal-effect{
+    margin-inline-end: 0;
+  }
+  .reveal-effect__item{ 
+    padding-inline: 25% 0;
+    text-align: left;
+    text-transform: none;
+  }
+  .reveal-effect__text {
+    animation-duration: 2.5s;
+  }
+}
