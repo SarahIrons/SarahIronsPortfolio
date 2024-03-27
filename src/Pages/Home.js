@@ -9,7 +9,7 @@ const Home = () => {
         <>
     <ContentSection id="about">
     <h1>Hi, my name is Sarah.</h1>
-    <RevealEffect listItems={["I am a web developer", "and this is my portfolio."]} />
+    <RevealEffect listItems={["Welcome.","It's so nice to have you here!"]} />
 
   </ContentSection>
   <ContentSection id="work" className="two"><h1>I'm a web developer.</h1>
@@ -23,11 +23,11 @@ const Home = () => {
 
   <ContentSection id="contact" className="four">
     <h1>Here is how to reach me:</h1>
-    <ul id="contact-info">
-      <li><a href = "mailto: sarahirons11@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
-      <li><a href="https://www.linkedin.com/in/sarah-e-irons/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-      <li><a href="https://github.com/SarahIrons"><FontAwesomeIcon icon={faSquareGithub}/></a></li>
-    </ul>
+    <div id="contact-info">
+      <a href = "mailto: sarahirons11@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
+      <a href="https://www.linkedin.com/in/sarah-e-irons/"><FontAwesomeIcon icon={faLinkedin}/></a>
+      <a href="https://github.com/SarahIrons"><FontAwesomeIcon icon={faSquareGithub}/></a>
+    </div>
  </ContentSection>
  </>
     )
