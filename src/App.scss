@@ -62,34 +62,38 @@
 }
 
 
+:root {
+  --white: #ffffff;
+  --main: #92BFB1;
+  --dark: #333333;
+  --ease-slow: all .4s ease-out;
+  --link-color: rgb(90, 46, 193);
+}
 
-$white: #ffffff;
-$main: #92BFB1;
-$dark: #333333;
-
-$ease-slow: all .4s ease-out;
-
+$main: #92BFB1;;
 body {
+
   margin: 0;
   background: lighten($main, 10%);
+  font-family: "Zilla Slab";
 }
 
 a {
   text-decoration: none;
-  color: $main;
+  color: var(--main);
   &:hover {
-    background: $main;
-    color: $dark;
+    background: var(--main);
+    color: var(--dark);
   }
 }
 
 
 h1 {
-  font-family: "Zilla Slab";
+
   margin: 0;
   line-height: 1em;
   font-weight: 500;
-  color: $white;
+  color: var(--white);
   font-size: 3.5em;
   span {
     font-style: italic;
@@ -112,8 +116,14 @@ h1 {
   display: flex;
   gap: 20px;
 
-  a{ color:rgb(90, 46, 193);font-size: 44px;}
 
+}
+
+.icon-link{
+ 
+    color:var(--link-color);
+    font-size: 44px;
+  
 }
 #about{
   .reveal-effect{

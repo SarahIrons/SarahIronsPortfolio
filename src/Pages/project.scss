@@ -1,0 +1,29 @@
+.project {
+    flex-direction: row;
+    gap:50px;
+
+    &__screenshot {
+        max-width: 70%;
+    }
+    &__copy {
+      p {
+        font-size: 1.5em;
+      }
+
+  
+    }
+    &__tags {
+        display: flex;
+        gap:5px;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style-type: none;
+   
+      }
+    &__tag{
+        background-color: var(--dark);
+        color:var(--white);
+        padding: 5px 15px;
+        border-radius: 5px;
+      }
+}

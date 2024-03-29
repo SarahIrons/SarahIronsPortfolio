@@ -1,15 +1,21 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ContentSection from "../components/ContentSection";
+import './project.scss';
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Project = (props) =>{
+const Project = ({id, tags, details, gitLink, imageUrl}) =>{
     return (
-    <ContentSection id={props.id} className="project">
-        <h1>{props.id}</h1>
-        {props.details && <p class="project__details">{props.details}</p>}
-        {props.imageUrl && <img class="project__screenshot" src={props.imageUrl}  alt={`still of ${props.id} app`}/>}
-        {props?.tags?.length > 0  &&  
-        <ul class="project__tags">
-           { props?.tags.map(tag=><li>{tag}</li>)}
-        </ul>}
+    <ContentSection id={id} className="project">
+        <div className="project__copy">
+            <h1 className="project__title">{id}</h1>
+            {tags?.length > 0  && 
+               <ul className="project__tags">
+                {tags.map(tag=><li className="project__tag">{tag}</li>)}
+            </ul>}
+            {details && <p className="project__details">{details}</p>}
+            <a className="project__gitLink icon-link" href={gitLink}><FontAwesomeIcon icon={faSquareGithub}/></a>
+        </div>
+        {imageUrl && <img className="project__screenshot" src={imageUrl}  alt={`still of ${id} app`}/>}
     </ContentSection>
 )}
 

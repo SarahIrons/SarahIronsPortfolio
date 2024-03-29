@@ -3,6 +3,7 @@ import ContentSection from "../components/ContentSection";
 import RevealEffect from "../components/RevealEffect";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -13,7 +14,13 @@ const Home = () => {
 
   </ContentSection>
   <ContentSection id="work" className="two"><h1>I'm a web developer.</h1>
-  <p></p></ContentSection>
+  <p>Here are some examples of my work</p>
+  <ul>
+    <li><Link to="tictactoe">tictactoe</Link></li>
+    <li><Link to="meditation">meditation</Link></li>
+    <li><Link to="dotti">dotti</Link></li>
+  </ul>
+  </ContentSection>
   <ContentSection id="skills" className="three"><h1>My training included:</h1>
 
     <RevealEffect listItems={["HTML", "CSS", "JavaScript", "Python","SQLite","jQuery","React","Bootstrap","Sass"]} />
@@ -24,9 +31,9 @@ const Home = () => {
   <ContentSection id="contact" className="four">
     <h1>Here is how to reach me:</h1>
     <div id="contact-info">
-      <a href = "mailto: sarahirons11@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
-      <a href="https://www.linkedin.com/in/sarah-e-irons/"><FontAwesomeIcon icon={faLinkedin}/></a>
-      <a href="https://github.com/SarahIrons"><FontAwesomeIcon icon={faSquareGithub}/></a>
+      <a className="icon-link" href = "mailto: sarahirons11@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
+      <a className="icon-link" href="https://www.linkedin.com/in/sarah-e-irons/"><FontAwesomeIcon icon={faLinkedin}/></a>
+      <a className="icon-link" href="https://github.com/SarahIrons"><FontAwesomeIcon icon={faSquareGithub}/></a>
     </div>
  </ContentSection>
  </>
