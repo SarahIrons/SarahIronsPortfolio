@@ -8,7 +8,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding-block: 20px;
+    padding-inline: 70px;
     box-sizing: border-box;
     overflow: hidden;
     &.two{background: darken($main, 5%)};
@@ -27,6 +28,8 @@
       }
     }
     h1{color: darken($main,90%);}
+
+    
     @media only screen and (min-width:600px){
       padding-inline: 150px;
       padding-block: 40px;

@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="meditation" element={<Project id="meditation" imageUrl={medImage}  details="calm" tags={['single page site', 'css/html', 'good vibes']}/>} />
+          <Route path="meditation" element={<Project id="meditation" imageUrl={medImage}  details="This is a single-page prototype design for a simple meditation website. It is made with HTML and CSS. " tags={['single- page site', 'CSS/HTML', 'good vibes']}/>} />
           <Route path="tictactoe" element={
             <Project 
               id="tictactoe" 

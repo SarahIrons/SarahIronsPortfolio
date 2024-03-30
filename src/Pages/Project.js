@@ -13,7 +13,7 @@ const Project = ({id, tags, details, gitLink, imageUrl}) =>{
                 {tags.map(tag=><li className="project__tag">{tag}</li>)}
             </ul>}
             {details && <p className="project__details">{details}</p>}
-            <a className="project__gitLink icon-link" href={gitLink}><FontAwesomeIcon icon={faSquareGithub}/></a>
+            <a className="project__gitLink link--icon" href={gitLink}><FontAwesomeIcon icon={faSquareGithub}/></a>
         </div>
         {imageUrl && <img className="project__screenshot" src={imageUrl}  alt={`still of ${id} app`}/>}
     </ContentSection>

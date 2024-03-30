@@ -102,6 +102,10 @@ h1 {
   }
 }
 
+h2{
+  font-size: 3.5em;
+}
+
 .light {
   color: lighten($main, 10%);
 }
@@ -110,31 +114,11 @@ h1 {
   text-decoration: underline;
 }
 
-#contact-info {
 
-  text-align: center;
-  display: flex;
-  gap: 20px;
-
-
+a{
+  color:var(--link-color);
 }
+.link--icon{
 
-.icon-link{
- 
-    color:var(--link-color);
     font-size: 44px;
-  
-}
-#about{
-  .reveal-effect{
-    margin-inline-end: 0;
-  }
-  .reveal-effect__item{ 
-    padding-inline: 25% 0;
-    text-align: left;
-    text-transform: none;
-  }
-  .reveal-effect__text {
-    animation-duration: 2.5s;
-  }
 }
