@@ -13,11 +13,11 @@ const Home = () => {
           <h1>Hi, my name is Sarah.</h1>
         </ContentSection>
         <ContentSection id="work" className="two">
-          <h2>Here is some of my work</h2>
+          <h2>Here is some of my work:</h2>
           <div className="work-links">
-            <Link className="work-link" to="tictactoe">tic tac toe</Link>
-            <Link className="work-link" to="meditation">meditation</Link>
-            <Link className="work-link" to="dotti">dotti</Link>
+            <Link className="work-link" to="tictactoe">Play</Link>
+            <Link className="work-link" to="meditation">Rest</Link>
+            <Link className="work-link" to="dotti">Plan</Link>
           </div>
         </ContentSection>
         <ContentSection id="skills" className="three">
@@ -26,7 +26,7 @@ const Home = () => {
         </ContentSection>
 
         <ContentSection id="contact" className="four">
-          <h2>Here is how to reach me</h2>
+          <h2>Here is how to reach me:</h2>
           <div id="contact-info">
             <a className="link--icon" href = "mailto: sarahirons11@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a>
             <a className="link--icon" href="https://www.linkedin.com/in/sarah-e-irons/"><FontAwesomeIcon icon={faLinkedin}/></a>

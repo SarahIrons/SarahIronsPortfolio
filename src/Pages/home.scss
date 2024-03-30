@@ -1,8 +1,9 @@
-#about,
-#contact
+#about
 {
-    h1{
-        font-size: 14vw;  
+    @media screen and (min-width: 600px) {
+        h1{
+            font-size: 14vw;  
+        }
     }
 }
 #about {
@@ -45,9 +46,11 @@
 #contact {
     align-items: flex-start;
     h2 {
-        font-size: 8vw;
         margin-block-start:0 ;
         margin-block-end: 50px;
+        @media screen and (min-width: 600px) {
+            font-size: 8vw;
+        }
     }
     #contact-info {
         display: flex;

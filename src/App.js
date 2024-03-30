@@ -16,14 +16,14 @@ function App() {
           <Route path="meditation" element={<Project id="meditation" imageUrl={medImage}  details="This is a single-page prototype design for a simple meditation website. It is made with HTML and CSS. " tags={['single- page site', 'CSS/HTML', 'good vibes']}/>} />
           <Route path="tictactoe" element={
             <Project 
-              id="tictactoe" 
+              id="tic tac toe" 
               imageUrl={gameImage} 
               details="This is a project with HTML, CSS and JavaScript. The font for the heading and the game tiles is an SVG font that I manipulated as an image using Photopea." 
               gitLink="https://github.com/SarahIrons/JavaScript_Projects/tree/main/TicTacToe" 
               tags={['HTML','JavaScript','CSS','font creation']}
             />} 
           />
-          <Route path="dotti" element={<Project id="dotti" details=" original dossier app" tags={['unique app', 'react','scss', 'sql']}/>} />
+          <Route path="dotti" element={<Project id="D.O.T.T.I." details=" PAGE IN PROGRESS - original dossier app" tags={['unique app', 'react','scss', 'sql']}/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>

@@ -89,12 +89,11 @@ a {
 
 
 h1 {
-
   margin: 0;
   line-height: 1em;
   font-weight: 500;
   color: var(--white);
-  font-size: 3.5em;
+  font-size: 5em;
   span {
     font-style: italic;
     text-decoration: underline;
@@ -104,6 +103,7 @@ h1 {
 
 h2{
   font-size: 3.5em;
+  font-weight: 500;
 }
 
 .light {
