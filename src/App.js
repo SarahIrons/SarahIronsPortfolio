@@ -9,7 +9,7 @@ import medImage from "./assets/meditationscreenshot.png"
 function App() {
   return (
   <>
- <BrowserRouter>
+ <BrowserRouter basename="/SarahIronsPortfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
