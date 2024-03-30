@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/SarahIronsPortfolio/static/css/main.f2e553f2.css",
-    "main.js": "/SarahIronsPortfolio/static/js/main.fe3b4e57.js",
+    "main.css": "/SarahIronsPortfolio/static/css/main.668a5205.css",
+    "main.js": "/SarahIronsPortfolio/static/js/main.b8f93906.js",
     "static/js/787.f91f1cc7.chunk.js": "/SarahIronsPortfolio/static/js/787.f91f1cc7.chunk.js",
+    "static/media/meditationscreenshot.png": "/SarahIronsPortfolio/static/media/meditationscreenshot.d37e1df104cd60a50415.png",
+    "static/media/tictactoescreenshot.png": "/SarahIronsPortfolio/static/media/tictactoescreenshot.cad18305d038a3b46fda.png",
     "index.html": "/SarahIronsPortfolio/index.html",
-    "main.f2e553f2.css.map": "/SarahIronsPortfolio/static/css/main.f2e553f2.css.map",
-    "main.fe3b4e57.js.map": "/SarahIronsPortfolio/static/js/main.fe3b4e57.js.map",
+    "main.668a5205.css.map": "/SarahIronsPortfolio/static/css/main.668a5205.css.map",
+    "main.b8f93906.js.map": "/SarahIronsPortfolio/static/js/main.b8f93906.js.map",
     "787.f91f1cc7.chunk.js.map": "/SarahIronsPortfolio/static/js/787.f91f1cc7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2e553f2.css",
-    "static/js/main.fe3b4e57.js"
+    "static/css/main.668a5205.css",
+    "static/js/main.b8f93906.js"
   ]
 }
