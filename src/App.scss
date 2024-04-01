@@ -62,40 +62,48 @@
 }
 
 
+:root {
+  --white: #ffffff;
+  --main: #92BFB1;
+  --dark: #333333;
+  --ease-slow: all .4s ease-out;
+  --link-color: rgb(90, 46, 193);
+}
 
-$white: #ffffff;
-$main: #92BFB1;
-$dark: #333333;
-
-$ease-slow: all .4s ease-out;
-
+$main: #92BFB1;;
 body {
+
   margin: 0;
   background: lighten($main, 10%);
+  font-family: "Zilla Slab";
 }
 
 a {
   text-decoration: none;
-  color: $main;
+  color: var(--main);
   &:hover {
-    background: $main;
-    color: $dark;
+    background: var(--main);
+    color: var(--dark);
   }
 }
 
 
 h1 {
-  font-family: "Zilla Slab";
   margin: 0;
   line-height: 1em;
   font-weight: 500;
-  color: $white;
-  font-size: 3.5em;
+  color: var(--white);
+  font-size: 5em;
   span {
     font-style: italic;
     text-decoration: underline;
     color: darken($main, 10%);
   }
+}
+
+h2{
+  font-size: 3.5em;
+  font-weight: 500;
 }
 
 .light {
@@ -106,10 +114,11 @@ h1 {
   text-decoration: underline;
 }
 
-#contact-info {
 
-  text-align: center;
+a{
+  color:var(--link-color);
+}
+.link--icon{
 
-  a{ color:rgb(90, 46, 193);}
-
+    font-size: 44px;
 }

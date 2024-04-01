@@ -1,16 +1,11 @@
-$white: #ffffff;
-$main: #92BFB1;
-$dark: #333333;
-
-$ease-slow: all .4s ease-out;
 .sticky {
     position: fixed;
     z-index: 10;
   }
   .navbar--container {
     top: 5%;
-    background: $white;
-    box-shadow: 2px 2px 15px rgba($dark, .1);
+    background: var(--white);
+    box-shadow: 2px 2px 15px rgba(var(--dark), .1);
     @media only screen and (min-width:600px){
       top: 15%;
     }
@@ -20,7 +15,7 @@ $ease-slow: all .4s ease-out;
     margin-left: 49px;
     font-size: 1em;
     &:hover {
-      color: $main;
+      color: var(--main);
       cursor: pointer;
     }
   }
@@ -46,14 +41,14 @@ $ease-slow: all .4s ease-out;
   .nav{
     height: 100vh;
     width: 300px;
-    background: $white;
-    transition: $ease-slow;
+    background: var(--white);
+    transition: var(--ease-slow);
     opacity: 1;
-    box-shadow: 2px 2px 15px rgba($dark, .1);
+    box-shadow: 2px 2px 15px rgba(var(--dark), .1);
 
     &.nav--close {
       transform: translateX(-300px);
-      transition: $ease-slow;
+      transition: var(--ease-slow);
       opacity: 0;
     }
   }
@@ -100,9 +95,9 @@ $ease-slow: all .4s ease-out;
       padding: 20px;
       i {
         font-size: 1.8em;
-        color: $main;
+        color: var(--main);
         &:hover {
-          color: $dark;
+          color: var(--dark);
           cursor: pointer;
         }
       }

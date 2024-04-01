@@ -1,0 +1,40 @@
+.project {
+
+  gap:50px;
+  
+  &__link{
+    margin-inline-start: 10px;
+  }
+  &__title {
+    font-size: 3em;
+  }
+    &__copy {
+      p {
+        font-size: 1.5em;
+      }
+
+    }
+    &__tags {
+        display: flex;
+        gap:5px;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style-type: none;
+   
+      }
+    &__tag{
+        background-color: var(--dark);
+        color:var(--white);
+        padding: 5px 15px;
+        border-radius: 5px;
+      }
+      
+      &__screenshot {max-width: 100%;}
+
+      @media screen and (min-width: 600px) {
+        flex-direction: row;
+        &__screenshot {
+          max-width: 70%;
+      }
+  }
+}

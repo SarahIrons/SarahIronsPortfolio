@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import './styles.scss';
 import {faBars,faXmark} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { HashLink as Link  } from 'react-router-hash-link'
+
 
 const NavigationPanel = (props) => {
 
@@ -17,10 +19,11 @@ const NavigationPanel = (props) => {
             <button  aria-label="close nav menu" onClick={()=>{setIsOpen('nav--close')}} className="nav__button--close nav__button"><FontAwesomeIcon icon={faXmark} /></button>
             <div className="nav--open-title">explore</div>
             <div className="nav--open-menu">
-                <a href="#about">about</a>
-                <a href="#work">work</a>
-                <a href="#skills">skills</a>
-                <a href="#contact">contact</a>
+                <Link smooth to="./#about">about</Link>
+                <Link smooth to="./#work">work</Link>
+                <Link smooth to="./#skills">skills</Link>
+                <Link smooth to="./#contact">contact</Link>
+                <Link to="https://docs.google.com/document/d/1vLgfdTS4eOnl4OaSfmYm5CjLNd_zYZqsAL5IxhSNl0o/edit?usp=sharing">resume</Link>
             </div>
         </div>
     </>
