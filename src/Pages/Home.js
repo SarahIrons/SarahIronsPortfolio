@@ -13,7 +13,7 @@ const Home = () => {
           <h1>Hi, my name is Sarah.</h1>
         </ContentSection>
         <ContentSection id="work" className="two">
-          <h2>Here is some of my work:</h2>
+          <h2>I'm a web developer. Here is some of my work:</h2>
           <div className="work-links">
             <Link className="work-link" to="tictactoe">Play</Link>
             <Link className="work-link" to="meditation">Rest</Link>
