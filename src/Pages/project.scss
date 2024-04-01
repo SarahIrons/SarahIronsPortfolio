@@ -1,7 +1,10 @@
 .project {
 
-    gap:50px;
-
+  gap:50px;
+  
+  &__link{
+    margin-inline-start: 10px;
+  }
   &__title {
     font-size: 3em;
   }

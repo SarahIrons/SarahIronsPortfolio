@@ -4,6 +4,7 @@ import {faBars,faXmark} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HashLink as Link  } from 'react-router-hash-link'
 
+
 const NavigationPanel = (props) => {
 
     const [isOpen, setIsOpen] = useState('nav--close');
@@ -22,6 +23,7 @@ const NavigationPanel = (props) => {
                 <Link smooth to="./#work">work</Link>
                 <Link smooth to="./#skills">skills</Link>
                 <Link smooth to="./#contact">contact</Link>
+                <Link to="https://docs.google.com/document/d/1vLgfdTS4eOnl4OaSfmYm5CjLNd_zYZqsAL5IxhSNl0o/edit?usp=sharing">resume</Link>
             </div>
         </div>
     </>
